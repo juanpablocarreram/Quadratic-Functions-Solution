@@ -1,1 +1,1 @@
-# Quadratic-Functions-Solution
+# Quadratic-Functions-Solution#Quadratic Function Solutions:C++ Program.  In this program, the user will input the values of a b and c and then with that information given, the console will calculate both solutions of the quadratic functions considering also, complex numbers.
