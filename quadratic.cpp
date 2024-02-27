@@ -17,24 +17,20 @@ int main() {
   cin >> c;
   cout << "The quadratic equation that will be solved is:\n";
   cout << a <<"x^2" << " + " << b << "x" << " + " << c << "\n";
-  cout << "The solutions of the quadratic equation are:\n";
   float discriminant= (b*b) - 4*a*c;
   float denominator = 2*a;
   float left=-1*b;
   if(discriminant<0){
 discriminant = sqrt(fabs(discriminant));
-cout << "x1:"<<left/denominator << " + " << discriminant/denominator<<"i\n";
-cout << "x2:"<<left/denominator << " - " << discriminant/denominator<<"i\n";
-
+cout << "The quadratic equation has 2 complex solutions\n" << "The solutions of the quadratic equation are:\n" << "x1 = "<<left/denominator << " + " << discriminant/denominator<<" i" << " and " << "x2 = "<<left/denominator << " - " << discriminant/denominator<<" i\n";
   }
   else if (discriminant==0){
     discriminant = sqrt(fabs(discriminant));
-cout << "x1:"<<left/denominator<<"\n";
+cout << "The equation has 1 real solution\n"<<"The solution of the quadratic equation is: x = "<<left/denominator<<"\n";
   }
-  else{
+  else{ 
     discriminant = sqrt(discriminant);
-    cout<< "x1:"<< (left+discriminant)/denominator<<"\n";
-    cout<< "x2:"<< (left-discriminant)/denominator<<"\n";
+    cout<< "The quadratic equation has 2 real solutions\n"<< "The solutions of the quadratic equation are:\n" << "x1 = "<< (left+discriminant)/denominator<<" and " << "x2 = "<< (left-discriminant)/denominator<<"\n";
   }
   cout<<"Endo";
 }
