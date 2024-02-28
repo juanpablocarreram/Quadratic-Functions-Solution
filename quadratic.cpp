@@ -32,5 +32,5 @@ cout << "The equation has 1 real solution\n"<<"The solution of the quadratic equ
     discriminant = sqrt(discriminant);
     cout<< "The quadratic equation has 2 real solutions\n"<< "The solutions of the quadratic equation are:\n" << "x1 = "<< (left+discriminant)/denominator<<" and " << "x2 = "<< (left-discriminant)/denominator<<"\n";
   }
-  cout<<"Endo";
+  cout<<"Endo\n";
 }
