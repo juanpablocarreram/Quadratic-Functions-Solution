@@ -2,10 +2,13 @@
 #include <cmath>
  using namespace std;
 int main() {
+  bool question = false;
+  do
+  {
   float a = 0;
   float b = 0;
   float c = 0;
-  cout << "Teacher´s Name: Agustin Rogelio Gonzalez\n";
+  cout << "Juan Pablo Carrera Martínez\n";
   cout << "Hello, hero you will find the solution of quadratic equations\n";
   cout << "The structure of a quadratic function is:\n";
   cout << "ax^2 + bx + c\n";
@@ -13,7 +16,7 @@ int main() {
   cin >> a;
   cout << "Give me the value of b: ";
   cin >> b;
-  cout << "Give me the value of c: ";
+  cout << "Give me the value of c:";
   cin >> c;
   cout << "The quadratic equation that will be solved is:\n";
   cout << a <<"x^2" << " + " << b << "x" << " + " << c << "\n";
@@ -32,5 +35,35 @@ cout << "The equation has 1 real solution\n"<<"The solution of the quadratic equ
     discriminant = sqrt(discriminant);
     cout<< "The quadratic equation has 2 real solutions\n"<< "The solutions of the quadratic equation are:\n" << "x1 = "<< (left+discriminant)/denominator<<" and " << "x2 = "<< (left-discriminant)/denominator<<"\n";
   }
-  cout<<"Endo";
+bool loop=false;
+char repeatprompt;
+do{
+  cout<<"Do you want to continue using the program? Y/N:";
+  cin>>repeatprompt;
+  switch(repeatprompt){
+    
+    case 'y':
+    case 'Y':
+question = true;
+loop=true;
+    break;
+
+    case 'n':
+    case 'N':
+question = false;
+loop =true;
+    break;
+
+default: 
+cout<< "Invalid Operator\n";
+cin.clear();
+cin.ignore(numeric_limits<streamsize>::max(), '\n');
+break;
+
+  }
+} while(loop ==false);
+
+  } while (question == true);
+  cout<<"End of the program\n";
 }
+  
