@@ -66,6 +66,7 @@ break;
 } while(loop ==false);
 
   } while (question == true);
-  cout<<"End of the program\n";
+  cout<<"You have selected the leaving option\n Good Bye!\n
+  Have a Wonderfull day\n";
 }
   
