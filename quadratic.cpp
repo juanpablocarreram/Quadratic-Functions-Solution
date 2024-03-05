@@ -38,7 +38,9 @@ cout << "The equation has 1 real solution\n"<<"The solution of the quadratic equ
 bool loop=false;
 char repeatprompt;
 do{
-  cout<<"Do you want to continue using the program? Y/N:";
+  cout<<"Menu:\n";
+  cout<<"Y: Find the solutions of a quadratic function\n";
+  cout<<"N: Exit\n";
   cin>>repeatprompt;
   switch(repeatprompt){
     
